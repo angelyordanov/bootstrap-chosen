@@ -7,6 +7,9 @@
 // Submit bugfixes to: http://github.com/alxlit/bootstrap-chosen
 //
 
+@import "../bootstrap/less/variables.less";
+@import "../bootstrap/less/mixins.less";
+
 @chznBackground: @inputBackground;
 @chznBorder: @inputBorder;
 @chznBorderRadius: @inputBorderRadius;
@@ -18,7 +21,7 @@
 @chznFocusBoxShadow: ~"0 1px 1px rgba(0, 0, 0, .075) inset, 0 0 8px rgba(82, 168, 236, .6)";
 @chznFocusTransition: ~"border linear .2s, box-shadow linear .2s";
 @chznHeight: @baseLineHeight + 8px; // 4px padding
-@chznSpritePath: "chosen-sprite.png";
+@chznSpritePath: "../img/chosen-sprite.png";
 
 .chosen            { width: 220px; }
 .chosen-mini       { width: 70px; }
@@ -178,8 +181,8 @@
       font-size: 1px;
       height: 10px;
       position: absolute;
-      right: 26px;
-      top: 8px;
+      right: 18px;
+      top: 6px;
       width: 12px;
 
       &:hover {
@@ -200,7 +203,7 @@
       width: 18px;
 
       b {
-        background: url("@{chznSpritePath}") no-repeat 0 2px;
+        background: url("@{chznSpritePath}") no-repeat 0 0px;
         display: block;
         height: 100%;
         width: 100%;
@@ -364,7 +367,7 @@
       border-left: none;
 
       b {
-        background-position: -18px 2px;
+        background-position: -18px 0px;
       }
     }
   }
