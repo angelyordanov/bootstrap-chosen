@@ -186,10 +186,6 @@
       }
     }
 
-    &.chzn-disabled .chzn-single abbr:hover {
-      background-position: right 2px;
-    }
-
     div {
       display: block;
       height: 100%;
@@ -386,10 +382,12 @@
 
 .chzn-disabled {
   cursor: default;
-  opacity: 0.5 !important;
 
   .chzn-single {
     cursor: default;
+    abbr, div b {
+      display: none;
+    }
   }
 
   .chzn-choices .search-choice .search-choice-close {
