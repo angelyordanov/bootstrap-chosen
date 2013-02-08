@@ -298,8 +298,8 @@
       .box-shadow(@chznBoxShadow);
       color: @grayDark;
       cursor: default;
-      line-height: 13px;
-      margin: 3px 0 3px 5px;
+      line-height: 12px;
+      margin: 2px 0 2px 2px;
       padding: 3px 20px 3px 5px;
       position: relative;
 
@@ -390,8 +390,22 @@
     }
   }
 
-  .chzn-choices .search-choice .search-choice-close {
-    cursor: default;
+  .chzn-choices {
+    background-color: @chznBackground;
+    #gradient > .vertical(@white, @grayLighter);
+    -webkit-background-clip: padding-box;
+       -moz-background-clip: padding;
+            background-clip: padding-box;
+    border: 1px solid @chznBorder;
+    .box-shadow(@chznBoxShadow);
+    
+    .search-choice {
+      padding: 3px;
+    
+      .search-choice-close {
+        display: none;
+      }
+    }
   }
 }
 
