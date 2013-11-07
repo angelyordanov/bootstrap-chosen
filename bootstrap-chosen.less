@@ -96,6 +96,23 @@
       cursor: pointer;
       display: list-item;
     }
+    
+    .create-option.active-result,
+    .create-option.active-result.highlighted {
+      cursor: pointer;
+      display: list-item;
+      color: @gray;
+      background: transparent;
+      
+      em {
+        background: @grayLighter;
+      }
+      
+      a:hover {
+        text-decoration: none;
+        color: @linkColor;
+      }
+    }
 
     .highlighted {
       background-color: @linkColor;
